@@ -1,0 +1,394 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Learn how to build your own portfolio website with HTML and publish it free using GitHub Pages."
+    />
+
+    <title>Build Your Portfolio | GitHub Pages Project</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        color: #202733;
+        background: #f7f7f7;
+      }
+
+      header {
+        background: #202733;
+        color: white;
+        padding: 1rem 2rem;
+      }
+
+      nav {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .site-title {
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1.25rem;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .hero {
+        background: white;
+        text-align: center;
+        padding: 5rem 2rem;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .hero h1 {
+        margin: 0 0 1rem;
+        font-size: clamp(2.4rem, 6vw, 4rem);
+      }
+
+      .hero p {
+        max-width: 720px;
+        margin: 0 auto 2rem;
+        font-size: 1.25rem;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 0.85rem 1.5rem;
+        background: #c9a84c;
+        color: #202733;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        margin: 0.35rem;
+      }
+
+      .button:hover {
+        opacity: 0.85;
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      section {
+        padding: 4rem 2rem;
+      }
+
+      section h2 {
+        margin-top: 0;
+        font-size: 2rem;
+      }
+
+      .intro {
+        background: #f7f7f7;
+      }
+
+      .intro-content {
+        max-width: 800px;
+      }
+
+      .resources {
+        background: white;
+      }
+
+      .resource-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .resource-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        background: #fff;
+      }
+
+      .resource-card h3 {
+        margin-top: 0;
+        font-size: 1.3rem;
+      }
+
+      .resource-card p {
+        margin-bottom: 1.25rem;
+      }
+
+      .steps {
+        background: #f7f7f7;
+      }
+
+      .steps ol {
+        max-width: 800px;
+        padding-left: 1.5rem;
+      }
+
+      .steps li {
+        margin-bottom: 1rem;
+      }
+
+      .learn {
+        background: white;
+      }
+
+      .learn ul {
+        max-width: 800px;
+        padding-left: 1.5rem;
+      }
+
+      .learn li {
+        margin-bottom: 0.75rem;
+      }
+
+      .next {
+        background: #202733;
+        color: white;
+        text-align: center;
+      }
+
+      .next-content {
+        max-width: 750px;
+        margin: 0 auto;
+      }
+
+      footer {
+        background: #11161d;
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 700px) {
+        nav {
+          flex-direction: column;
+        }
+
+        nav a {
+          margin: 0 0.5rem;
+        }
+
+        .hero {
+          padding: 3.5rem 1.5rem;
+        }
+
+        section {
+          padding: 3rem 1.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="site-title">Build Your Portfolio</div>
+
+        <div>
+          <a href="#resources">Resources</a>
+          <a href="#steps">Steps</a>
+          <a href="#learn">What You Will Learn</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Build Your Portfolio</h1>
+
+        <p>
+          Create a personal portfolio website, showcase your projects, and
+          publish your work free on the web with GitHub Pages.
+        </p>
+
+        <a class="button" href="#resources"> Start the Project </a>
+      </section>
+
+      <section class="intro">
+        <div class="intro-content">
+          <h2>Welcome to the Portfolio Project</h2>
+
+          <p>
+            A portfolio gives you a place to show what you are learning, what
+            you have built, and the skills you are developing.
+          </p>
+
+          <p>
+            In this project, you will create a simple portfolio website using
+            HTML and learn how to publish it online using GitHub Pages.
+          </p>
+
+          <p>
+            You do not need to purchase web hosting or a domain name to complete
+            this project.
+          </p>
+        </div>
+      </section>
+
+      <section class="resources" id="resources">
+        <h2>Portfolio Project Resources</h2>
+
+        <p>Use these resources to build your portfolio from start to finish.</p>
+
+        <div class="resource-grid">
+          <article class="resource-card">
+            <h3>Step-by-Step Guide</h3>
+
+            <p>
+              Follow the practical guide to learn how to create your portfolio
+              with HTML and publish it using GitHub Pages.
+            </p>
+
+            <a
+              class="button"
+              href="https://scholaty.com/students/test-preparation/sat-prep/daily/build-your-portfolio-a-practical-guide-to-html-and-project-focus.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read the Guide
+            </a>
+          </article>
+
+          <article class="resource-card">
+            <h3>Two Example Portfolio Templates</h3>
+
+            <p>
+              Start with a sample HTML portfolio and customize it with your own
+              information, skills, projects, and experience.
+            </p>
+
+            <a
+              class="button"
+              href="https://scholaty.com/students/test-preparation/sat-prep/daily/portfolio-templates/template-1.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Template
+            </a>
+
+            <a
+              class="button"
+              href="https://scholaty.com/students/test-preparation/sat-prep/daily/portfolio-templates/template-2.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Template
+            </a>
+          </article>
+
+          <article class="resource-card">
+            <h3>Publish with GitHub Pages</h3>
+          
+            <p>
+              Learn how to turn your portfolio files into a publicly accessible
+              website using GitHub Pages.
+            </p>
+          
+            <a
+              class="button"
+              href="https://github.com/webdevpractice2026/portfolio/tree/main"
+              target="_blank"
+              rel="noopener noreferrer">
+              Publish Your Site
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="steps" id="steps">
+        <h2>Project Steps</h2>
+
+        <ol>
+          <li>Create a free GitHub account.</li>
+
+          <li>Create your portfolio repository.</li>
+
+          <li>Download or copy the portfolio template.</li>
+
+          <li>Customize the HTML with your own information.</li>
+
+          <li>Add your projects and skills.</li>
+
+          <li>Commit your changes to GitHub.</li>
+
+          <li>Enable GitHub Pages.</li>
+
+          <li>Visit your portfolio online and continue improving it.</li>
+        </ol>
+      </section>
+
+      <section class="learn" id="learn">
+        <h2>What You Will Learn</h2>
+
+        <p>
+          This project gives you practical experience with several important web
+          development concepts.
+        </p>
+
+        <ul>
+          <li>How HTML creates the structure of a webpage</li>
+
+          <li>How CSS controls the appearance of a webpage</li>
+
+          <li>How to organize files for a web project</li>
+
+          <li>How Git tracks changes to your code</li>
+
+          <li>How GitHub stores and manages your project</li>
+
+          <li>How GitHub Pages publishes a website</li>
+
+          <li>How to create a portfolio that grows with your skills</li>
+        </ul>
+      </section>
+
+      <section class="next">
+        <div class="next-content">
+          <h2>Start Building</h2>
+
+          <p>
+            Begin with the guide, customize the template, and publish your first
+            portfolio website.
+          </p>
+
+          <a
+            class="button"
+            href="https://github.com/webdevpractice2026/portfolio/tree/main"          
+            target="_blank" rel="noopener noreferrer"> Begin the Guide
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Portfolio Building Project | Educational Resource</p>
+    </footer>
+  </body>
+</html>
